@@ -1,29 +1,30 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
-import { IconsModule } from '../helpers/icons.module';
-import { StatCardComponent } from '../JobSeeker/stat-card/stat-card.component';
+import { IconsModule } from '../../helpers/icons.module';
+import { StatCardComponent } from '../stat-card/stat-card.component';
 
 @Component({
   selector: 'app-job-seek',
-  imports: [CommonModule, RouterModule, RouterLink, IconsModule, RouterLink, RouterLinkActive,StatCardComponent],
+  imports: [CommonModule, RouterModule, RouterLink, IconsModule, RouterLink, RouterLinkActive, StatCardComponent],
   templateUrl: './job-seek.component.html',
   styleUrl: './job-seek.component.css'
 })
 export class JobSeekComponent {
+  isMobileMenuOpen = false;
   links = [
     {
-      path: '/jobs/starts',
+      path: 'starts',
       label: 'Dashboard',
       icon: 'ionHomeOutline'
     },
     {
-      path: '/jobs/aut',
+      path: 'aut',
       label: 'Job Matches',
       icon: 'ionBriefcaseOutline'
     },
     {
-      path: '/applications',
+      path: 'applications',
       label: 'Applications',
       icon: 'ionDocumentTextOutline'
     },

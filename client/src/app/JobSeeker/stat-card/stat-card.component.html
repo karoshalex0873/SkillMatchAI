@@ -40,7 +40,7 @@
         <!-- Action Button - Positioned at bottom -->
         <div class="absolute bottom-4 left-4 right-4 flex justify-end">
           <a
-            routerLink="/job-listing"
+          [routerLink]="stat.route"
             class="flex items-center gap-2 bg-light-100/70  w-20  text-sm hover:bg-light-100 cursor-pointer text-dark-100 transition-colors rounded-md px-2.5 py-1.5 justify-center"
           >
             {{stat.btn_text}}
