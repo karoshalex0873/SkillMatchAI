@@ -6,7 +6,7 @@ import { StatCardComponent } from '../stat-card/stat-card.component';
 
 @Component({
   selector: 'app-job-seek',
-  imports: [CommonModule, RouterModule, RouterLink, IconsModule, RouterLink, RouterLinkActive, StatCardComponent],
+  imports: [CommonModule, RouterModule, RouterLink, IconsModule, RouterLink, RouterLinkActive],
   templateUrl: './job-seek.component.html',
   styleUrl: './job-seek.component.css'
 })
@@ -29,17 +29,17 @@ export class JobSeekComponent {
       icon: 'ionDocumentTextOutline'
     },
     {
-      path: '/profile',
+      path: 'profile',
       label: 'Skill Profile',
       icon: 'ionPersonCircleOutline'
     },
     {
-      path: '/portfolio',
+      path: 'Notifications',
       label: 'Portfolio',
       icon: 'ionFileTrayFullOutline'
     },
     {
-      path: '/career-path',
+      path: 'careerPath',
       label: 'Career Paths',
       icon: 'ionRocketOutline'
     }

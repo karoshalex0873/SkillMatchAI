@@ -17,3 +17,21 @@ export interface Job {
   salaryRange?: string;
   type: 'Full-time' | 'Part-time' | 'Contract' | 'Remote';
 }
+
+// application.interface.ts
+export interface Application {
+  id: string;
+  position: string;
+  company: string;
+  status: 'Applied' | 'In Review' | 'Offered' | 'Rejected';
+  appliedDate: Date;
+  matchPercentage: number;
+  jobDescription: string;
+  requirements: string[];
+  salaryRange: string;
+  applicationForm: {
+    resume: File | null;
+    coverLetter: string;
+    questions: { question: string; answer: string }[];
+  };
+}

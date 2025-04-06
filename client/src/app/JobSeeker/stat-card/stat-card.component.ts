@@ -26,26 +26,26 @@ export class StatCardComponent {
       btn_text:"apply",
       route:'aut'
     },
-    // {
-    //   title:"Skill Profile",
-    //   StartsNum: "86% Complete",
-    //   icon: "ionPerson",
-    //   description: "Update your skills  profile  to boost your matches",
-    //   btn_text:"update"
-    // },
-    // {
-    //   title:"Notifications",
-    //   StartsNum: 5,
-    //   icon: "ionNotifications",
-    //   description: "Read ",
-    //   btn_text:"read"
-    // },
-    // {
-    //   title:"Career path",
-    //   StartsNum: 1,
-    //   icon: "ionJournal",
-    //   description: "Continue with your carrer journey",
-    //   btn_text:"customize"
-    // }
+    {
+      title:"Skill Profile",
+      StartsNum: "86% Complete",
+      icon: "ionPerson",
+      description: "Update your skills  profile  to boost your matches",
+      btn_text:"update"
+    },
+    {
+      title:"Notifications",
+      StartsNum: 5,
+      icon: "ionNotifications",
+      description: "Read ",
+      btn_text:"read"
+    },
+    {
+      title:"Career path",
+      StartsNum: '50% Completion',
+      icon: "ionJournal",
+      description: "Continue with your carrer journey",
+      btn_text:"customize"
+    }
   ]
 }
