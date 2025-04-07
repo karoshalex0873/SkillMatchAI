@@ -2,7 +2,6 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
 import { IconsModule } from '../../helpers/icons.module';
-import { StatCardComponent } from '../stat-card/stat-card.component';
 
 @Component({
   selector: 'app-job-seek',
@@ -35,8 +34,8 @@ export class JobSeekComponent {
     },
     {
       path: 'Notifications',
-      label: 'Portfolio',
-      icon: 'ionFileTrayFullOutline'
+      label: 'Notifications',
+      icon: 'ionNotifications'
     },
     {
       path: 'careerPath',
@@ -44,5 +43,9 @@ export class JobSeekComponent {
       icon: 'ionRocketOutline'
     }
   ]
+  //logout function
+  logout() {
+    console.log('Logged out');
+  }
 
 }
