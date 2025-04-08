@@ -10,7 +10,11 @@ import { IconsModule } from '../../helpers/icons.module';
   styleUrl: './job-seek.component.css'
 })
 export class JobSeekComponent {
+  // avatarUrl
+  avatarUrl:string='assets/profile.png'
+
   isMobileMenuOpen = false;
+
   links = [
     {
       path: 'starts',
