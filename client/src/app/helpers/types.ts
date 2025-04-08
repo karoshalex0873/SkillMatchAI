@@ -35,3 +35,13 @@ export interface Application {
     questions: { question: string; answer: string }[];
   };
 }
+export interface Applicant {
+  id:number;
+  name:string;
+  position: string;
+  matchPercentage: number;
+  experience:number;
+  skills:string[]
+  resume:File|string
+  coverLetter: string;
+}

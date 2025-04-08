@@ -24,7 +24,6 @@ export class JobCardComponent {
       salaryRange: '$100k - $130k',
       type: 'Full-time'
     },
-    
   ];
 
   getMatchColor(percentage: number): string {

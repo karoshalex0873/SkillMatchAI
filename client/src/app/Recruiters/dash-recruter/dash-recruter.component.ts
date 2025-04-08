@@ -25,7 +25,7 @@ export class DashRecruterComponent {
     {
       path: 'querry',
       label: 'AI Assistant',
-      icon: 'ionSearch'
+      icon: 'ionSparkles'
     },
     {
       path: 'interviews',
